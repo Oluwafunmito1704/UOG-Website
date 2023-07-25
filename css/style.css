@@ -3,8 +3,8 @@
 }
 
 header{
-    background-image: url(/UOG-Website/images/header\ background.jpg);
+    background-image: url(images/header\ background.jpg);
     background-size: contain;
-    height: 1000px;
+    height: 100%;
     width: 100%;
 }
