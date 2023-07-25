@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+}
+
+header{
+    background-image: url(/UOG-Website/images/header\ background.jpg);
+    background-size: contain;
+    height: 1000px;
+    width: 100%;
+}
