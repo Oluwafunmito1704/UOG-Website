@@ -3,8 +3,533 @@
 }
 
 header{
-    background-image: url(images/header\ background.jpg);
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(36deg, #FFFEFE 0%, #FFF 10%, rgba(255, 255, 255, 0) 65%),url(images/header\ background.jpg),lightgray 50% / cover no-repeat;
     background-size: contain;
-    height: 100%;
+    height: 870px;
     width: 100%;
+    z-index: -9;
+}
+
+header .headertext{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #292937;
+    font-family:'Noto Sans', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: auto;
+    margin-bottom: -300px;
+    margin-left: 80px;
+    
+}
+
+
+header .motto{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #292937;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: auto;
+    margin-bottom: 250px;
+   
+
+}
+.motto span{
+    color: #FF4C00;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128,0.7);
+    
+}
+
+.logo{
+    color: #FF4C00;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    margin: 15px 80px ;
+
+}
+.logo span{
+    color: black;
+}
+
+/* font-family: 'Crimson Pro', serif;
+font-family: 'League Spartan', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 30px 80px ;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+nav ul li {
+    display: flex;
+    margin-right: 10px;
+    font-size: 1.2em;
+
+}
+nav ul li a{
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav ul li a span{
+    color: #FF4C00;
+}
+
+.approachandengage{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: -175px;
+}
+
+.approachandengage .approach{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #292937;
+    width: 100%;
+    height: 310px;
+    margin-right: 50px;
+    color: #BABABC;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.36px;
+    padding: 20px;
+}
+
+.approach button{
+    width: 195px;
+    height: 61px;
+    border-radius: 10px;
+    background: #D9D9D9;
+    color: #292937;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+ .approach h3{
+    align-items: center;
+ }
+
+ .approachandengage .engage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #292937;
+    width: 100%;
+    height: 310px;
+    margin-left: 50px;
+    color: #BABABC;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.36px;
+    padding: 20px;
+}
+
+.engage button{
+    width: 195px;
+    height: 61px;
+    border-radius: 10px;
+    background: #D9D9D9;
+    color: #FF4C00;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+
+.belief{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+    color: #292937;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.motivesection{
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    background-color: #F4F1F1;
+    color: #292937;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.motive{
+    text-align: left;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+#supporters{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+#supporters h2{
+    text-align: center;
+    color: #292937;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.supporters{
+    background-color: #D9D9D9;
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+
+/* Donation Section */
+#donation, #network, #future{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(auto, auto);
+    color: #292937;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+#donation .donationtext, #network .networktext, #future .futuretext{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #292937;
+    text-align: left;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 50%;
+}
+
+.donationtext button, .futuretext button{
+    width: 195px;
+    height: 61px;
+    background: none;
+    border-radius: 10px;
+    border: #292937 solid;
+    color: #292937;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.donationimg{
+    display: flex;
+    flex-direction: column;
+}
+
+.donationimg .donation1{
+    align-content: flex-end;
+}
+
+.donationimg img{
+    border-radius: 100%;
+}
+
+
+.networktext button{
+    width: 195px;
+    height: 61px;
+    border-radius: 10px;
+    border: #FF4C00 solid;
+    background: none;
+    color: #FF4C00;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#join{
+    display: flex;
+    flex-direction: column;
+    background: #D9D9D9;
+    padding: 100px;
+}
+
+#join h2{
+    color: #FF4C00;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+#join h2 span{
+    color: #000;
+}
+
+#groups{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.individuals, .companies, .team{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #292937;
+    margin: 40px;
+    width: 100%;
+    height: 350px;
+    padding: 20px 50px 20px 30px;
+}
+.individuals h4{
+    color: #FF4C00;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.individuals p, .companies p, .team p{
+    color: #FFF;
+    font-family: Noto Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.individuals button{
+    width: 195px;
+    height: 61px;
+    border-radius: 10px;
+    border: #FF4C00 solid;
+    background: none;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.companies h4{
+    color: #BFBEFF;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.companies button{
+    width: 195px;
+    height: 61px;
+    border-radius: 10px;
+    border: #BFBEFF solid;
+    background: none;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.team h4{
+    color: #F00;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.team button{
+    width: 195px;
+    height: 61px;
+    border-radius: 10px;
+    border: #F00 solid;
+    background: none;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#uogteam{
+    background-color: #BDBCBC;
+    padding-bottom: 50px;
+}
+#uogteam h2{
+    color: #000;
+    font-family: League Spartan;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+
+}
+
+.gridteam{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(auto, auto);
+    gap: 50px;
+    margin: 50px 50px 0px 50px;
+    color: #000;
+    font-family: League Spartan;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* image is distorted */
+.gridteam > div img{
+    aspect-ratio: 1/1;
+}
+
+.teammembers{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.40);
+    margin-top: 20px;
+
+}
+
+.teamposition{
+    color: #FF4C00;
+    font-family: League Spartan;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+footer{
+    background-color: #292937;
+}
+
+#form{
+    display: flex;
+    justify-content: space-between;
+}
+
+#form  .links h3{
+    color: #FFF;
+    font-family: Noto Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.form{
+    border-radius: 10px;
+    background: #D9D9D9;
+    margin: 20px;
+}
+
+
+.form h3{
+    color: #000;
+    font-family: Crimson Pro;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.form p{
+    color: #000;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.form h4{
+    color: #000;
+    font-family: League Spartan;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+footer h5{
+    text-align: center;
+    color: #FFF;
+    font-family: Noto Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
