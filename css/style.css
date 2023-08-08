@@ -5,11 +5,13 @@
 header{
     display: flex;
     flex-direction: column;
-    background: linear-gradient(36deg, #FFFEFE 0%, #FFF 10%, rgba(255, 255, 255, 0) 65%),url(images/header\ background.jpg),lightgray 50% / cover no-repeat;
+    background: linear-gradient(75deg, #FFFEFE 0%, #FFF 10%, rgba(255, 255, 255, 0) 60%),url(images/header\ background.jpg),lightgray 50%;
     background-size: contain;
-    height: 870px;
+    background-position-x: 100%;
+    height: 840px;
     width: 100%;
     z-index: -9;
+    animation: introLoad 2s forwards;
 }
 
 header .headertext{
@@ -52,6 +54,8 @@ nav{
     display: flex;
     justify-content: space-between;
     background-color: rgba(128, 128, 128,0.7);
+    height: 12%;
+    width: 100%;
     
 }
 
@@ -61,7 +65,7 @@ nav{
     font-size: 64px;
     font-style: normal;
     font-weight: 800;
-    margin: 15px 80px ;
+    margin: 5px 80px ;
 
 }
 .logo span{
@@ -130,7 +134,7 @@ nav ul li a span{
     border-radius: 10px;
     background: #D9D9D9;
     color: #292937;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 600;
@@ -164,7 +168,7 @@ nav ul li a span{
     border-radius: 10px;
     background: #D9D9D9;
     color: #FF4C00;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 600;
@@ -247,21 +251,31 @@ nav ul li a span{
     line-height: normal;
     margin-left: 100px;
     margin-right: 100px;
+    margin-bottom: 200px;
 }
 
+#future{
+    margin-bottom: 100px;
+}
 
 #donation .donationtext, #network .networktext, #future .futuretext{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     color: #292937;
     text-align: left;
+    width: 100%;
+}
+
+#donation .donationtext, #network .networktext, #future .futuretext p{
     font-family: 'Noto Sans', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 50%;
+}
+.networktext{
+    padding-left: 20px;
 }
 
 .donationtext button, .futuretext button{
@@ -271,7 +285,7 @@ nav ul li a span{
     border-radius: 10px;
     border: #292937 solid;
     color: #292937;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 600;
@@ -281,14 +295,32 @@ nav ul li a span{
 .donationimg{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .donationimg .donation1{
-    align-content: flex-end;
+    align-self: last baseline;
+    background-image: url(images/donation1.jpg);
+    background-position-x: 60%;
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    border-radius: 100%;
+    border: #FFF solid 10px;
 }
 
-.donationimg img{
+.donationimg .donation2{
+    align-self: first baseline;
+    background-image: url(images/donation2.jpg);
+    background-position-x: 50%;
+    height: 300px;
+    width: 300px;
+    background-size: cover;
     border-radius: 100%;
+    border: #FF4C00 solid 10px;
+    z-index: -9;
+    margin-top: -100px;
+    margin-left: 200px;
 }
 
 
@@ -299,11 +331,31 @@ nav ul li a span{
     border: #FF4C00 solid;
     background: none;
     color: #FF4C00;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+.networkimg{
+    width: 400px;
+    height: 500px;
+    background-image: url(images/the\ gang.jpg);
+    background-size: cover;
+    border-radius: 250px 10px 10px 10px;
+    background-position-x: 50%;
+}
+
+.futureimg{
+    width: 400px;
+    height: 500px;
+    margin-left: 300px;
+    background-image: url(images/students.jpg);
+    background-size: cover;
+    border-radius: 10px 250px 10px 10px;
+    background-position-x: 50%;
+
 }
 
 #join{
@@ -352,8 +404,8 @@ nav ul li a span{
 
 .individuals p, .companies p, .team p{
     color: #FFF;
-    font-family: Noto Sans;
-    font-size: 24px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -366,8 +418,8 @@ nav ul li a span{
     border: #FF4C00 solid;
     background: none;
     color: #FFF;
-    font-family: Roboto;
-    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -389,7 +441,7 @@ nav ul li a span{
     border: #BFBEFF solid;
     background: none;
     color: #FFF;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 600;
@@ -412,7 +464,7 @@ nav ul li a span{
     border: #F00 solid;
     background: none;
     color: #FFF;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 600;
@@ -425,7 +477,7 @@ nav ul li a span{
 }
 #uogteam h2{
     color: #000;
-    font-family: League Spartan;
+    font-family: 'League Spartan', sans-serif;
     font-size: 64px;
     font-style: normal;
     font-weight: 800;
@@ -441,16 +493,126 @@ nav ul li a span{
     gap: 50px;
     margin: 50px 50px 0px 50px;
     color: #000;
-    font-family: League Spartan;
+    font-family: 'League Spartan', sans-serif;
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-/* image is distorted */
-.gridteam > div img{
-    aspect-ratio: 1/1;
+
+.teamimg{
+    margin-left: 20px;
+    background-image: url(images/arogs.jpg);
+    background-size: cover;
+    width: 362px;  
+    height: 482px;
+    border-radius: 10px;
+}
+
+.teamimg1{
+    margin-left: 20px;
+    background-image: url(images/bakri.png);
+    background-size: cover;
+    width: 362px;  
+    height: 482px;
+    background-position-x: 80%;
+    border-radius: 10px;
+}
+
+.teamimg2{
+    margin-left: 20px;
+    background-image: url(images/ruby.png);
+    background-size: cover;
+    width: 362px;  
+    height: 482px;
+    border-radius: 10px;
+}
+
+.teamimg3{
+    margin-left: 20px;
+    background-image: url(images/radhyallah.jpg);
+    background-size: cover;
+    width: 362px;  
+    height: 482px;
+    background-position-x: 50%;
+    border-radius: 10px;
+}
+
+.teamimg4{
+    margin-left: 20px;
+    background-image: url(images/toluwani.png);
+    background-size: cover;
+    width: 362px;  
+    height: 482px;
+    background-position-x: 40%;
+    border-radius: 10px;
+}
+
+.teamimg5{
+    margin-left: 20px;
+    background-image: url(images/fatimah.jpg);
+    background-size: cover;
+    width: 362px;  
+    height: 482px;
+    background-position-x: 80%;
+    border-radius: 10px;
+}
+
+.teamimg6{
+    margin-left: 20px;
+    background-image: url(images/alat.png);
+    background-size: cover;
+    width: 362px;  
+    height: 482px;
+    border-radius: 10px;
+}
+
+.teamimg7{
+    margin-left: 20px;
+    background-image: url(images/kingsley.png);
+    background-size: cover;
+    width: 362px;  
+    height: 482px;
+    background-position-x: 60%;
+    border-radius: 10px;
+}
+
+.teamimg8{
+    margin-left: 20px;
+    background-image: url(images/afeez.jpg);
+    background-size: cover;
+    width: 362px;  
+    height: 482px;
+    background-position-x: 45%;
+    border-radius: 10px;
+}
+
+.teamimg9{
+    margin-left: 20px;
+    background-image: url(images/iman.png);
+    background-size: cover;
+    width: 362px;  
+    height: 482px;
+    border-radius: 10px;
+}
+
+.teamimg10{
+    margin-left: 20px;
+    background-image: url(images/photo_2023-07-10_11-46-02.jpg);
+    background-size: cover;
+    width: 362px;  
+    height: 482px;
+    border-radius: 10px;
+}
+.teamimg11{
+    margin-left: 20px;
+    background-image: url(images/fatiha.jpg);
+    background-size: cover;
+    width: 362px;  
+    height: 482px;
+    background-position-x: 40%;
+    border-radius: 10px;
 }
 
 .teammembers{
@@ -465,7 +627,7 @@ nav ul li a span{
 
 .teamposition{
     color: #FF4C00;
-    font-family: League Spartan;
+    font-family: 'League Spartan', sans-serif;
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
@@ -482,9 +644,14 @@ footer{
     justify-content: space-between;
 }
 
+.links{
+    align-self: center;
+    margin-left: 50px;
+}
+
 #form  .links h3{
     color: #FFF;
-    font-family: Noto Sans;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
@@ -494,41 +661,88 @@ footer{
     border-radius: 10px;
     background: #D9D9D9;
     margin: 20px;
+    margin-top: 50px;
+    margin-right: 50px;
+    padding: 20px;
 }
 
 
 .form h3{
+    text-align: center;
     color: #000;
-    font-family: Crimson Pro;
+    font-family: 'Crimson Pro', serif;
     font-size: 28px;
     font-style: normal;
     font-weight: 600;
+    margin-bottom: 30px;
 }
 
 .form p{
     color: #000;
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    margin-bottom: 30px;
 }
 
 .form h4{
     color: #000;
-    font-family: League Spartan;
+    font-family: 'League Spartan', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
+input[type="text"], input[type="email"]{
+    width: 90%;
+    height: 40px;
+    border: none ;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+input[placeholder]{
+    color:#BDBCBC ;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+input[type="submit"]{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: #FF4C00 solid;
+    background: none;
+    color: #FF4C00;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 footer h5{
     text-align: center;
     color: #FFF;
-    font-family: Noto Sans;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+@keyframes introLoad{
+    from{
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to{
+        clip-path: polygon(0 0, 100% 0, 100% 100%,0 100%);
+    }
 }
