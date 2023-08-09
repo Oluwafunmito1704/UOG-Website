@@ -137,7 +137,7 @@ nav ul li a span{
     margin-top: -175px;
 }
 
-.approachandengage .approach{
+.approachandengage .approach, .approachandengage .engage{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -154,7 +154,7 @@ nav ul li a span{
     padding: 20px;
 }
 
-.approach a{
+.approach a, .engage a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,9 +165,7 @@ nav ul li a span{
     color: #292937;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     text-decoration: none;
     transition-property: background-color, letter-spacing; 
     transition-duration: 0.5s;
@@ -184,40 +182,13 @@ nav ul li a span{
  }
 
  .approachandengage .engage{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: #292937;
-    width: 100%;
-    height: 310px;
     margin-left: 50px;
     color: #BABABC;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 0.36px;
-    padding: 20px;
 }
 
 .engage a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 195px;
-    height: 61px;
-    border-radius: 10px;
     background: #D9D9D9;
     color: #FF4C00;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-decoration: none;
-    transition-property: background-color, letter-spacing; 
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in;
 }
 .engage a:hover{
     background-color: lightblue;
@@ -225,7 +196,7 @@ nav ul li a span{
 }
 
 
-.belief{
+.belief, .motivesection{
     display: flex;
     justify-content: center;
     text-align: center;
@@ -239,8 +210,6 @@ nav ul li a span{
     line-height: normal;
 }
 .motivesection{
-    display: flex;
-    justify-content: center;
     margin-left: 100px;
     margin-right: 100px;
     margin-bottom: 50px;
@@ -249,9 +218,6 @@ nav ul li a span{
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .motive{
@@ -286,6 +252,38 @@ nav ul li a span{
     justify-content: space-around;
 }
 
+.scrollable-container {
+    width: 85%;
+    overflow: hidden;
+    background-color: #D9D9D9;
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    justify-content: space-around;
+  }
+  
+  .scrollable-content {
+    display: flex;
+    animation: scroll 10s linear infinite; /* Adjust the animation duration as needed */
+  }
+  
+  .scrollable-content img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 10px; /* Add some spacing between images */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
 /* Donation Section */
 #donation, #network, #future{
     display: grid;
@@ -294,9 +292,7 @@ nav ul li a span{
     color: #292937;
     font-family: 'League Spartan', sans-serif;
     font-size: 40px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     margin-left: 100px;
     margin-right: 100px;
     margin-bottom: 200px;
@@ -326,7 +322,7 @@ nav ul li a span{
     padding-left: 20px;
 }
 
-.donationtext a, .futuretext a{
+.donationtext a, .futuretext a, .networktext a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -338,9 +334,7 @@ nav ul li a span{
     color: #292937;
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     text-decoration: none;
     transition-property: background-color; 
     transition-duration: 0.5s;
@@ -384,24 +378,8 @@ nav ul li a span{
 
 
 .networktext a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 195px;
-    height: 61px;
-    border-radius: 10px;
     border: #FF4C00 solid;
-    background: none;
     color: #FF4C00;
-    font-family: 'Roboto', sans-serif;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-decoration: none;
-    transition-property: background-color; 
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in;
 }
 
 .networktext a:hover{
@@ -463,43 +441,40 @@ nav ul li a span{
     height: 350px;
     padding: 20px 20px 20px 30px;
 }
-.individuals h4{
+.individuals h4, .companies h4, .team h4{
     color: #FF4C00;
     font-family: 'League Spartan', sans-serif;
     font-size: 36px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
 }
 
 .individuals p, .companies p, .team p{
     color: #FFF;
     font-family: 'Noto Sans', sans-serif;
     font-size: 22px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
 }
 
-.individuals a{
+.individuals a, .companies a, .team a{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 195px;
     height: 61px;
     border-radius: 10px;
-    border: #FF4C00 solid;
-    background: none;
     color: #FFF;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     text-decoration: none;
     transition-property: color; 
     transition-duration: 0.5s;
     transition-timing-function: ease-in;
+}
+
+.individuals a{
+    border: #FF4C00 solid;
+    background: none;
 }
 
 .individuals a:hover{
@@ -509,32 +484,10 @@ nav ul li a span{
 
 .companies h4{
     color: #BFBEFF;
-    font-family: 'League Spartan', sans-serif;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .companies a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 195px;
-    height: 61px;
-    border-radius: 10px;
     border: #BFBEFF solid;
-    background: none;
-    color: #FFF;
-    font-family: 'Roboto', sans-serif;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-decoration: none;
-    transition-property: color; 
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in;
 }
 
 .companies a:hover{
@@ -543,32 +496,10 @@ nav ul li a span{
 
 .team h4{
     color: #F00;
-    font-family: 'League Spartan', sans-serif;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .team a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 195px;
-    height: 61px;
-    border-radius: 10px;
     border: #F00 solid;
-    background: none;
-    color: #FFF;
-    font-family: 'Roboto', sans-serif;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-decoration: none;
-    transition-property: color; 
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in;
 }
 
 .team a:hover{
@@ -606,117 +537,64 @@ nav ul li a span{
 
 
 .teamimg{
-    margin-left: 20px;
-    background-image: url(images/arogs.jpg);
     background-size: cover;
     width: 362px;  
     height: 482px;
     border-radius: 10px;
+}
+
+.lead{
+    background-image: url(images/arogs.jpg);
 }
 
 .teamimg1{
-    margin-left: 20px;
     background-image: url(images/bakri.png);
-    background-size: cover;
-    width: 362px;  
-    height: 482px;
     background-position-x: 80%;
-    border-radius: 10px;
 }
 
 .teamimg2{
-    margin-left: 20px;
     background-image: url(images/ruby.png);
-    background-size: cover;
-    width: 362px;  
-    height: 482px;
-    border-radius: 10px;
 }
 
 .teamimg3{
-    margin-left: 20px;
     background-image: url(images/radhyallah.jpg);
-    background-size: cover;
-    width: 362px;  
-    height: 482px;
     background-position-x: 50%;
-    border-radius: 10px;
 }
 
 .teamimg4{
-    margin-left: 20px;
     background-image: url(images/toluwani.png);
-    background-size: cover;
-    width: 362px;  
-    height: 482px;
     background-position-x: 40%;
-    border-radius: 10px;
 }
 
 .teamimg5{
-    margin-left: 20px;
     background-image: url(images/fatimah.jpg);
-    background-size: cover;
-    width: 362px;  
-    height: 482px;
     background-position-x: 80%;
-    border-radius: 10px;
 }
 
 .teamimg6{
-    margin-left: 20px;
     background-image: url(images/alat.png);
-    background-size: cover;
-    width: 362px;  
-    height: 482px;
-    border-radius: 10px;
 }
 
 .teamimg7{
-    margin-left: 20px;
     background-image: url(images/kingsley.png);
-    background-size: cover;
-    width: 362px;  
-    height: 482px;
     background-position-x: 60%;
-    border-radius: 10px;
 }
 
 .teamimg8{
-    margin-left: 20px;
     background-image: url(images/afeez.jpg);
-    background-size: cover;
-    width: 362px;  
-    height: 482px;
     background-position-x: 45%;
-    border-radius: 10px;
 }
 
 .teamimg9{
-    margin-left: 20px;
     background-image: url(images/iman.png);
-    background-size: cover;
-    width: 362px;  
-    height: 482px;
-    border-radius: 10px;
 }
 
 .teamimg10{
-    margin-left: 20px;
     background-image: url(images/photo_2023-07-10_11-46-02.jpg);
-    background-size: cover;
-    width: 362px;  
-    height: 482px;
-    border-radius: 10px;
 }
 .teamimg11{
-    margin-left: 20px;
     background-image: url(images/fatiha.jpg);
-    background-size: cover;
-    width: 362px;  
-    height: 482px;
     background-position-x: 40%;
-    border-radius: 10px;
 }
 
 .teammembers{
